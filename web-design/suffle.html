@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import "compass/css3";
+
+.list-inline > li {
+    width: 100px;
+  background-color: purple;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  color: white;
+  font-size: 26px;
+}
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h3>Shuffle List Randomly when page reload.</h3>
+        <ul id="grid" class="list-inline">
+          <li>Chloe</li>
+          <li>Frankie</li>
+          <li>Christine</li>
+          <li>Alan</li>
+          <li>Natasha</li>
+          <li>Jonathan</li>
+          <li>Koby</li>
+        </ul>
+        
+    </div>
+      
+
+<script>
+var grd = $('#grid');
+var imgs = grd.children();
+
+// Page Refresh to run script below
+imgs.sort(function(){
+  return (Math.round(Math.random()) - 0.5);
+});
+grd.remove('li');
+for(var i=0; i < imgs.length; i++)grd.append(imgs[i]);
+
+//Click Functions to run the same script on top
+// $('a.btn-default').click(function(){
+  
+//   imgs.sort(function(){
+//     return (Math.round(Math.random()) - 0.5);
+//   });
+//   grd.remove('li');
+//   for(var i=0; i < imgs.length; i++)grd.append(imgs[i]);
+//  });
+</script>
+
+</body>
+</html>

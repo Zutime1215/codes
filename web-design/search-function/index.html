@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test</title>
+
+    <style>
+        .div {
+    display: none;
+}
+
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#myInput {
+    box-sizing: border-box;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: 5px solid #ddd;
+    border-radius: 25px;
+}
+
+#myInput:focus {
+    outline: 4px solid #f2f2f2;
+    border-color: #171313;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    max-height: 215px;
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow-y: scroll;
+    border: none;
+    z-index: 1;
+    border-radius: 25px;
+}
+
+.dropdown-content a {
+    color: black;
+    /*padding: 12px 16px;*/
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+
+
+
+.dropdown-content{
+    /*color: #ababab;*/
+    font-size: 15px;
+    border:solid;
+    border-radius: 15px;
+    border-color: #303030;
+    background-color: #303030;
+   /* width:385px;*/
+
+
+}
+
+
+.dropdown-content img{
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 50px;
+    /*margin-left: 10px;
+    margin-top:  25px;*/
+    float: left;
+
+}
+
+.dropdown-content h5{
+    font-size: 19px;
+    color: #666;
+    width: 213px;
+    border-radius: 7px;
+    margin-bottom: -2px;
+    transition: .3s all ease;
+    padding-left: 5px;
+    margin-top: 9px;
+}
+
+.dropdown-content li, a {
+    list-style-type: none;
+    text-decoration : none;
+    color: #ababab;
+}
+.dropdown-content h5:hover{
+    background-color: #b446f0;
+    color:#fff ;
+}
+
+.dropdown-content h6{
+    margin-top: 5px;
+    color: #EE303B;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 18px;
+
+}
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="dropdown">
+        <input type="text" class="dropbtn" placeholder="Search Here..." id="myInput" onInput="filterFunction()">
+        <div id="myDropdown" class="dropdown-content">
+            <ul>
+               <li><a href="../../all/anime/deathnote/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1GOQceqgfS18P0H8Q7BERc39R_Tq0W6IS" alt="">
+                <h5>Death Note</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+
+              <li><a href="../../all/anime/attackontitans01/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1GI_EeMIZHTxFP2B99Y5oiTlpl1J2mIa-" alt="">
+                <h5>Attack on Titan</h5>
+                <h6>Season 1</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/attackontitans02/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1oaGR2hMQ3BQfnzTeU9_7YBv5jScyy54t" alt="">
+                <h5>Attack on Titan</h5>
+                <h6>Season 2</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/attackontitans03/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1bnRSjrboNtHbbP3fEZVYpZERBMUJu9mw" alt="">
+                <h5>Attack on Titan</h5>
+                <h6>Season 3</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/attackontitans04/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1hPmkt_HZhUQo86__II7hGH7ai_J7Reku" alt="">
+                <h5>Attack on Titan</h5>
+                <h6>Season 4</h6></a>
+              </li>
+
+
+
+              <li><a href="../../all/anime/avatarthelast/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1A8Laa6Ah5f0jjJ6oa4VEEPBzxO1Fl161" alt="">
+                <h5>Avatar</h5>
+                <h6>The Last Airbender</h6></a>
+              </li>
+
+
+              <li><a href="../../all/anime/avatar-korra/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1ZMFZi2sld05ZDoiZFXYsMSs3XuxMz-1R" alt="">
+                <h5>The Legend of Korra</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+
+              <li><a href="../../all/anime/myheroacademias01/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1jnc0kUpwznr6HyzVDnpnGXV3LhJUM6I2" alt="">
+                <h5>My Hero Academia</h5>
+                <h6>Season 1</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/myheroacademias02/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=13vlFKVbhQQ2jy2IcGLJXvEqz2I4jSbSr" alt="">
+                <h5>My Hero Academia</h5>
+                <h6>Season 2</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/myheroacademias03/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1GRFpc_r1q7cNzpI6qBm3p90TLJCf2ElZ" alt="">
+                <h5>My Hero Academia</h5>
+              <h6>Season 3</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/myheroacademias04/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1lBRUTPcI-nh2VVrZwFhyMzo37SQLiYoD" alt="">
+                <h5>My Hero Academia</h5>
+                <h6>Season 4</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/onepunchmans01/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1orUQK2m8fS2jaL6dsVMBF1OhYAA6dzMA" alt="">
+                <h5>One punch man</h5>
+                <h6>Season 1</h6></a>
+              </li>
+
+              <!-- <li><a href="../../all/anime/onepunchmans01specials/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1kAhqZqiBVkdZbe3dvAYuPb92UmfQYbM9" alt="">
+                <h5>One punch man</h5>
+                <h6>S01 Special</h6></a>
+              </li> -->
+
+              <li><a href="../../all/anime/onepunchmans02/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1GtC9x2t4y0nD-zRE0klHClaLKvcfNqi4" alt="">
+                <h5>One punch man</h5>
+                <h6>Season 2</h6></a>
+              </li>
+
+             <!--  <li><a href="../../all/anime/onepunchmans02specials/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1cas79201U4S5Er72PMuIT_o8meyipMMY" alt="">
+                <h5>One punch man</h5>
+                <h6>S02 Special</h6></a>
+              </li> -->
+
+              <!-- <li><a href="../../all/anime/onepunchmanova/roadtohero.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1-5VUrKTORcQGQs_YuFHpYVnzR8nRDION" alt="">
+                <h5>One punch man</h5>
+                <h6>Road to Hero</h6></a>
+              </li> -->
+
+              <li><a href="../../all/anime/SAOpart1/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1S-FfJNBNCpx6FC8wWUV-g6fx5ddOizMs" alt="">
+                <h5>Sword Art Online</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/SAOpart2/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1yjjlLxV7eq96kSirHHUuWkI836Xhrf2U" alt="">
+                <h5>Sword Art Online</h5>
+                <h6>Gun Gale Online</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/SAOalicization/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1PzrDW4nKgTZlWyAwo98niNCu2PFqk_w4" alt="">
+                <h5>Sword Art Online</h5>
+                <h6>Alicization</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/SAOalicizationpart1/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1OuFHNYMzHOWjPZgpapKUmmrMXWlTEAYZ" alt="">
+                <h5>Sword Art Online</h5>
+                <h6>Alicization 2</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/Jujutsu kaisen/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1_JRoWooFFxmijbb4UIBVT2pB_0t9p9jQ" alt="">
+                <h5>Jujutsu Kaisen</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/fullmetalalchemistbrotherhood/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1f3pgFoM_EIyrOogJgy6DU57PpB-Zto0N" alt="">
+                <h5>Fullmetal Alchemist Brotherhood</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/demonslayer/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1dGB5hibEsb1-Pl0PnzPjYceIj18lGx0F" alt="">
+                <h5>Demon Slayer</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/mobpsyco100s01/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1Pxasby2_pDw-dLZ3Pt6jsz-C-Yw4Lg3g" alt="">
+                <h5>Mob psycho 100</h5>
+                <h6>Season 1</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/mobpsyco100s02/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1otN8jhBoCgFOV9_JBySOb5ssk25RcRNF" alt="">
+                <h5>Mob psycho 100</h5>
+                <h6>Season 2</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/steingate/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1mEc-6dI0FKqP4NZvUp9-bSN65cLFO-8u" alt="">
+                <h5>Steins;Gate</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/steingate0/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1Nsls3xJ4bHuvEefhADqZk-KGVc5Ysr9y" alt="">
+                <h5>Steins;Gate 0</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/souleater/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=18JTi-0syrsIQQYpXFzsmaVGUZWRcbka6" alt="">
+                <h5>Soul Eater</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/assassinationclassrooms01/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1djuEnp1qVAAD3F3Wb2H_WzaOk4oytHua" alt="">
+                <h5>Assasination Classroom</h5>
+                <h6>Season 1</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/assassinationclassrooms02/episode1.html">
+                <img src=" https://drive.google.com/uc?export=view&id=1kMf26PmUeCWD4ete5nKyYS2CU3NSq1k9" alt="">
+                <h5>Assasination Classroom</h5>
+                <h6>Season 2</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/thedragonprinces01/episode1.html">
+                <img src="https://drive.google.com/uc?export=view&id=1dDac4ZPIO6NLiaNIgZNbveaV92xQYt3b" alt="">
+                <h5>The Dragon Prince</h5>
+                <h6>Season 1</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/thedragonprinces02/episode1.html">
+                <img src="https://drive.google.com/uc?export=view&id=1ycT_zj2gZpRLxvercfnSMmpoOi_He66H" alt="">
+                <h5>The Dragon Prince</h5>
+                <h6>Season 2</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/thedragonprinces03/episode1.html">
+                <img src="https://drive.google.com/uc?export=view&id=1h_0t5jcK1-dFZ86rEvC5FxpC3AZmoT4c" alt="">
+                <h5>The Dragon Prince</h5>
+                <h6>Season 3</h6></a>
+              </li>
+             
+              <li><a href="../../all/anime/hunterxhunter/episode1.html">
+                <img src="https://drive.google.com/uc?export=view&id=1B2PlRvHE0Rd1UyfAzmdbSmJpBQaLX61m" alt="">
+                <h5>Hunter X Hunter</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/tokyoghoul/episode1.html">
+                <img src="https://drive.google.com/uc?export=view&id=1Fy2lB2eKw-6fuwlE-n_omgsFgTWkkvXy" alt="">
+                <h5>Tokyo Ghoul</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/tokyoghoulroot/episode1.html">
+                <img src="https://drive.google.com/uc?export=view&id=1isllCM7dc0kRKfsAY2arikCKkYqL_PIC" alt="">
+                <h5>Tokyo Ghoul√A</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/tokyoghoul_re/episode1.html">
+                <img src="https://drive.google.com/uc?export=view&id=100aRZW5_bya3ZkEjaKp-RqlP-_CedeT4" alt="">
+                <h5>Tokyo Ghoul:Re</h5>
+                <h6>S01 & S02</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/roboticsnote/episode1.html">
+                <img src="https://drive.google.com/uc?export=view&id=1S3pGtCKM41YYPEhZNiwv_xXUsbvZ-0-S" alt="">
+                <h5>Robotics Note</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/blueexorsist/episode1.html">
+                <img src="https://drive.google.com/uc?export=view&id=13XQ8Vssx5HK-b0us-00KbtK-Y8tl0FK9" alt="">
+                <h5>Blue Exorcist</h5>
+                <h6>Completed</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/blueexorsistkyotosaga/episode1.html">
+                <img src="https://drive.google.com/uc?export=view&id=1pSnF5kk7cyVnTlIdIzUjCjo618ewXHMI" alt="">
+                <h5>Blue Exorcist</h5>
+                <h6>Kyoto Saga</h6></a>
+              </li>
+
+              <li><a href="../../all/anime/erased/episode1.html">
+                <img src="https://drive.google.com/uc?export=view&id=1N-YPMzDSfGfUdryBx5xeu5RifVraIgvu" alt="">
+                <h5>Erased</h5>
+                <h6>Completed</h6></a>
+              </li>
+              
+            </ul>
+
+
+
+
+
+            <!-- <a href="#">death note</a>
+            <a href="#">attack on titan 1</a>
+            <a href="#">attack on titan 2</a>
+            <a href="#">attack on titan 3</a>
+            <a href="#">attack on titan 4</a>
+            <a href="#">avatar</a>
+            <a href="#">the legend of korra</a>
+            <a href="#">sword art online</a>
+            <a href="#">my hero academia</a>
+            <a href="#">one punch man</a>
+            <a href="#">mob psycho 100</a>
+            <a href="#">demon slayer</a>
+            <a href="#">jujutsu kaisan</a>
+            <a href="#">soul eater</a>
+            <a href="#">hunter x hunter</a> -->
+        </div>
+        <div id="noMatches" class="dropdown-content">
+            <a href="#tools">No Matches</a>
+        </div>
+    </div>
+
+<script>
+    function filterFunction() {
+    let isInputAvail = false;
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toLowerCase();
+    if (filter.length > 0) {
+        document.getElementById("myDropdown").classList.add("show");
+    } else {
+        document.getElementById("myDropdown").classList.remove("show");
+    }
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        txtValue = a[i].innerText;
+        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+            isInputAvail = true;
+            a[i].style.display = "block";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+    if (!isInputAvail) {
+        document.getElementById("noMatches").classList.add('show');
+    } else {
+        document.getElementById("noMatches").classList.remove('show');
+    }
+}
+</script>
+</body>
+</html>
