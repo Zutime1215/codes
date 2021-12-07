@@ -2,7 +2,7 @@ from selenium import webdriver
 
 url = 'https://www.facebook.com/100005421971441/videos/2862459190681999/'
 
-driver = webdriver.Chrome(executable_path='/home/zahid/codes/py/10-min-downloader/chromedriver')
+driver = webdriver.Chrome(executable_path='/home/zahid/codes/src/chromedriver')
 driver.get(url)
 
 
