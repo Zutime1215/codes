@@ -18,7 +18,14 @@
   color: white;
   font-size: 26px;
 }
+
+.list-inline li:not(:nth-child(-n + 4)) {
+  display:none;
+}
+
+
     </style>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -33,6 +40,9 @@
           <li>Natasha</li>
           <li>Jonathan</li>
           <li>Koby</li>
+          <li>ripu</li>
+          <li>shem</li>
+          <li>zengs</li>
         </ul>
         
     </div>
@@ -49,15 +59,6 @@ imgs.sort(function(){
 grd.remove('li');
 for(var i=0; i < imgs.length; i++)grd.append(imgs[i]);
 
-//Click Functions to run the same script on top
-// $('a.btn-default').click(function(){
-  
-//   imgs.sort(function(){
-//     return (Math.round(Math.random()) - 0.5);
-//   });
-//   grd.remove('li');
-//   for(var i=0; i < imgs.length; i++)grd.append(imgs[i]);
-//  });
 </script>
 
 </body>

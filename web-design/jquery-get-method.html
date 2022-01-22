@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+		var gogo = "https://gogoplay1.com/videos/one-punch-man-dub-episode-1";
+		// var link_name = gogo.slice(29,-10);
+		    $.get(gogo, function(data){
+		    	var urls = [];
+
+		    	var doc = document.createElement("html");
+				doc.innerHTML = data;
+                
+				var links = doc.getElementsByTagName("iframe");
+
+				episodelinks.push("https:" + links[0].getAttribute("src"));
+
+				alert(urls);
+                
+                // for ( let ii of urls ) {
+                // 	if ( ii.includes(link_name)) {
+                // 		iii = "\n" + "https://gogoplay1.com" + ii
+                // 		anim_urls.push(iii);
+                // 	}
+                // }
+                // rever_urls = anim_urls.reverse();
+                // alert(rever_urls);
+		    });
+	</script>
+
+</head>
+</html>

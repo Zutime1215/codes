@@ -18,7 +18,7 @@ routines = data['routines']
 #version dict
 same_subjects = {}
 for routine in routines:
-	key = routine['subject'].lower()
+	key = routine['chapter'].lower()
 	routine_list = same_subjects.get(key)
 	
 	if not routine_list:
@@ -27,6 +27,6 @@ for routine in routines:
 		routine_list.append(routine)
 
 
-print(len(routines), same_subjects['physics 1st paper'])
+print(len(routines), same_subjects['ভেক্টর - ০১'])
 
 # purify_info = json.dumps(data, indent=2, sort_keys=True) + '\n\n'
