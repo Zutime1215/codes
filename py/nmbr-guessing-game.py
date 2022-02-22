@@ -9,11 +9,11 @@ while count < 3:
     if userInput != x:
         if chanceLeft == 0:
             print("You have no chance left :( ")
-            print("The number was",x)
+            # print("The number was",x)
             print("Better luck next time")
         else:
             print("Wrong guess")
-            print("The number was",x)
+            # print("The number was",x)
             print(f"You have {chanceLeft} chance left")
     else :
         print("Congratulations! You guessed it correct")

@@ -7,7 +7,7 @@ url = 'https://script.googleusercontent.com/macros/echo?user_content_key=SJjqzxv
 
 html_text = requests.get(url).text
 data = json.loads(html_text)
-
+# print(type(data))
 routines = data['routines']
 
 # version defaultdict
