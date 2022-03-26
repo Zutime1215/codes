@@ -1,0 +1,41 @@
+http://172.16.12.4:8080/
+user -> CID47759
+pass -> H#&3@bC!&2
+
+ssid -> Try Again
+pass -> oxygen123
+-------------------------------
+-------------------------------
+http://172.16.12.15:8080/index.html
+user -> CID50245
+pass -> QKNY*vK!&2
+
+ssid -> ARABI
+pass -> Sjubly123
+-------------------------------
+-------------------------------
+http://172.16.12.66/
+user -> CID6753
+pass -> O!&5@kW!&0
+
+ssid -> Amber-IT
+pass -> 01683249100
+
+
+
+
+
+
+
+
+
+
+
+
+other routers:::
+http://113.11.48.65/index.html
+user - Rifatrc@smile.com.bd
+pass - 123456
+
+ssid - Sarafat’s Territory 
+pass - Hello there
